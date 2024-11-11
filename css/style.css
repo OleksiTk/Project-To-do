@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  background-color: #def9c4;
+  height: 100%;
+  line-height: 1;
+}
+textarea,
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+/*--------------------------------------------------------*/
+.wrapper {
+  font-family: Bangers;
+  padding-top: 100px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+/*--------------------------------------------------------*/
+
+.write__container {
+  border-radius: 30px;
+  background-color: #9cdba6;
+  padding: 40px 150px 50px 40px;
+}
+.write__To-do {
+  padding-bottom: 20px;
+  display: flex;
+}
+.write__text {
+  padding-right: 30px;
+  color: #fff;
+  font-size: 40px;
+}
+.wrtite__img {
+}
+.write__add {
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+}
+.write__input {
+  color: rgb(117, 117, 117);
+  font-size: 30px;
+  outline: none; /* прибирає стандартну підсвітку фокусу */
+  border-radius: 20px;
+  background-color: #9cdba6;
+  padding: 30px 80px 30px 80px;
+}
+.write__button {
+  background-color: #50b498;
+  color: white;
+  font-size: 40px;
+  padding: 20px 50px;
+  border-radius: 30px;
+}
+
+.list__to-do {
+  display: none;
+  color: rgb(117, 117, 117);
+  padding-top: 50px;
+  padding-left: 40px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+.list__text {
+  position: relative;
+  padding-bottom: 30px;
+  position: relative;
+  font-size: 30px;
+}
+.list__text::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -50px;
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/unchecked.png);
+  background-size: cover;
+  background-position: center;
+}
+.list__span {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 670px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/close.png);
+  background-size: cover;
+  background-position: center;
+}
+
+ul li.checked {
+  text-decoration: line-through #fff;
+}
+ul li.checked::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -50px;
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/check-mark.png);
+  background-size: cover;
+  background-position: center;
+}
