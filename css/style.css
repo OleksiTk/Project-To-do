@@ -147,10 +147,10 @@ ul li.checked {
 ul li.checked::after {
   content: "";
   position: absolute;
-  top: -2px;
-  left: -50px;
-  width: 35px;
-  height: 35px;
+  top: -10px;
+  left: -51px;
+  width: 45px;
+  height: 47px;
   background-image: url(../img/check-mark.png);
   background-size: cover;
   background-position: center;
